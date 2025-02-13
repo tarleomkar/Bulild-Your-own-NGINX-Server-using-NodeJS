@@ -15,8 +15,8 @@ const server = http.createServer((req, res) => {
         '.css': 'text/css',
         '.js': 'text/javascript',
         '.png': 'image/png'  // Fixed: .pmg -> .png
-    };
-
+    }; 
+ 
     const contentType = mimeTypes[extName] || 'application/octet-stream';
 
     fs.readFile(filePath, (err, content) => {
